@@ -33,7 +33,7 @@ Practical use that reads a value from a somewhat deeply nested object hierarchy
 import splitKeypath from "split-keypath";
 
 function readDeepValue(input, keypath) {
-  return splitKeypath("some.deep[0].key").reduce((nested, key) => nested[key], input);
+  return splitKeypath(keypath).reduce((nested, key) => nested[key], input);
 }
 
 var input = {
