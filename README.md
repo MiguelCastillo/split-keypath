@@ -46,7 +46,7 @@ var input = {
   }
 };
 
-var result = readDeepValue({}, "some.deep[0].key");
+var result = readDeepValue(input, "some.deep[0].key");
 // Result is 42
 ```
 
